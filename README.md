@@ -1,4 +1,5 @@
-<h2>Univeristy of San Francisco</h2>
+<img src="img/usfdiamond.png">
+
 <h3>Business Intelligence Portal </h3>
 
 <h4>JavaScript | HTML5 | CSS | Bootstrap | Tableau API </h4>

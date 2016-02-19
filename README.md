@@ -8,7 +8,7 @@
     <li>npm install</li>
     <li>bower install</li>
     <li>Install Express</li>
-    <li>grunt install</li>
+    <li>Grunt install</li>
     <li>Server listening on: http://localhost:8080</li>  
 </ul>
 

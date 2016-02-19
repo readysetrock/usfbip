@@ -9,8 +9,7 @@
     <li>bower install</li>
     <li>Install Express</li>
     <li>grunt install</li>
-    <li>Server listening on: http://localhost:8080</li>
-    
+    <li>Server listening on: http://localhost:8080</li>  
 </ul>
 
 

@@ -12,6 +12,5 @@
     <li>Server listening on: http://localhost:8080</li>  
 </ul>
 
-
 <h5>University of San Francisco &copy; 2016 Business Intelligence Portal </h5>
 

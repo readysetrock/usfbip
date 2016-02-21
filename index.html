@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-	<title>USF BIP</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="University of San Francisco" content="ITS - Business Intelligence Portal">
+    <meta name="Ty Towry tytowry@gmail.com" content="Dashboard | Tableau JavaScript API | Tableau Server |">
+	 
+
+      <title>USF BIP</title>
     
 	<!-- <script src="js/script.js"></script> -->
     
 	<link rel="stylesheet" type = "text/css" href="css/bip.css">
   <link rel="stylesheet" type = "text/css" href="css/bootstrap-theme.css">
-  <link rel="stylesheet" type = "text/css" href="css/bootstrap.css">    
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" type = "text/css" href="css/bootstrap.css">      
+  <!-- Latest compiled and minified CSS -->
   <script src="https://online.tableau.com/javascripts/api/tableau-version.js"></script>
   <script type="text/javascript" 
         src="https://public.tableau.com/javascripts/api/tableau-2.js"></script>
@@ -51,58 +58,108 @@
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
+    
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">HOME<span class="sr-only">(current)</span></a></li>
         <li><a href="#">Recommended</a></li>
-        <li><a href="#">Recommended</a></li>
-        <li><a href="#">Recommended</a></li>
-        <li><a href="#">Recommended</a></li>
+        <li><a href="#">Popular</a></li>
+        <li><a href="#">Favorites</a></li>
+        <li><a href="#">Glossary</a></li>
       </ul>
      
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Glossary</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">ITS Helpdesk</a></li>
-            <li><a href="#">Business Intelligence Portal</a></li>
-            <li><a href="#">Fun</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
-        </li>
-      </ul>
+      
+      <form id="signin" class="navbar-form navbar-right" role="form">
+        <div class="input-group">
+          <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+            <input id="email" type="email" class="form-control" name="email" value="" placeholder="Email Address">                                        
+        </div>
+
+        <div class="input-group">
+          <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+            <input id="password" type="password" class="form-control" name="password" value="" placeholder="Password">                                        
+        </div>
+          <button type="submit" class="btn btn-primary">Login</button>
+      </form>
+     
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
   </nav>
-  
-  <div class="bottom">
-      
-      <h5>ITS - Business Intelligence Portal</h5>
 
-      <ul class="sidebar-nav navbar navbar-collapse">
-      <li class="diamond"><a href="#">Glossary</a></li>
-      <li><a href="#">Glossary</a></li>
-      <li><a href="#">Glossary</a></li>
-      <li><a href="#">Glossary</a></li> 
-      </ul>
-  </div>
+
+
 
 </div>
-    <ul >
-      <div id="vizContainer"></div>
-      </ul>
+    
 
-    <div class="footer">
+    <div class="row">
   
-      <h5> Univeristy of San Francisco Business Intelligence Portal </h5>
-
+      <div class="col-md-3 col-sm-4 col-xs-6">
+        <div class="dummy"></div>
+        <a href="#x" class="thumbnail purple">Homepage</a>
+      </div>
+      <div class="col-md-3 col-sm-4 col-xs-6">
+        <div class="dummy"></div>
+        <a href="#x" class="thumbnail purple">View Profile</a>
+      </div>
+      <div class="col-md-3 col-sm-4 col-xs-6">
+        <div class="dummy"></div>
+        <a href="#x" class="thumbnail purple">Something<br>2 lines</a>
+     </div>
+       <div class="col-md-3 col-sm-4 col-xs-6">
+        <div class="dummy"></div>
+        <a href="#x" class="thumbnail purple">Something 2 lines</a>
+     </div>
+       <div class="col-md-3 col-sm-4 col-xs-6">
+        <div class="dummy"></div>
+        <a href="#x" class="thumbnail purple">Homepage</a>
+      </div>
+      <div class="col-md-3 col-sm-4 col-xs-6">
+        <div class="dummy"></div>
+        <a href="#x" class="thumbnail purple">View Profile</a>
+      </div>
+      <div class="col-md-3 col-sm-4 col-xs-6">
+        <div class="dummy"></div>
+        <a href="#x" class="thumbnail purple">Something 2 lines</a>
+     </div>
+       <div class="col-md-3 col-sm-4 col-xs-6">
+        <div class="dummy"></div>
+        <a href="#x" class="thumbnail purple">Something 2 lines</a>
+     </div>
+      
     </div>
 
+
+      <ul >
+          <div id="vizContainer"></div>
+      </ul>
+
+    
+
+
+    <div class="footer">
+        <h5> Univeristy of San Francisco Business Intelligence Portal </h5>
+    </div>
+
+
+
+
 </div>
 
 
+<!-- jQuery -->
+    <script src="js/jquery.js"></script>
 
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
 </body>
 </html>

@@ -1,5 +1,8 @@
-//Lets require/import the HTTP module
+var dispatcher = require('httpdispatcher');
 var http = require('http');
+var connect = require('connect');
+var serveStatic = require('serve-static');
+connect().use(serveStatic(__dirname)).listen(8080);
 
 //Lets define a port we want to listen to
 const PORT=8080; 
@@ -12,8 +15,4 @@ function handleRequest(request, response){
 //Create a server
 var server = http.createServer(handleRequest);
 
-//Lets start our server
-server.listen(PORT, function(){
-    //Callback triggered when server is successfully listening. Hurray!
-    console.log("Server listening on: http://localhost:%s", PORT);
-});
+

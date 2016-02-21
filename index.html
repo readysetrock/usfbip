@@ -1,30 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
 	<title>USF BIP</title>
     
 	<script src="js/script.js"></script>
     
 	<link rel="stylesheet" type = "text/css" href="css/bip.css">
+  <link rel="stylesheet" type = "text/css" href="css/bootstrap-theme.css">
+  <link rel="stylesheet" type = "text/css" href="css/bootstrap.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+ 
     
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+       
 
         <!-- Optional theme -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 
         <!-- Latest compiled and minified JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-</head>
-<body>
+
+        <script type="text/javascript" 
+        src="https://public.tableau.com/javascripts/api/tableau-2.js"></script>
+        <script type="text/javascript">
+        function initViz() {
+            var containerDiv = document.getElementById("vizContainer"),
+                url = "http://public.tableau.com/views/RegionalSampleWorkbook/Storms",
+                options = {
+                    hideTabs: true,
+                    onFirstInteractive: function () {
+                        console.log("Run this code when the viz has finished loading.");
+                    }
+                };
+            
+            var viz = new tableau.Viz(containerDiv, url, options); 
+            // Create a viz object and embed it in the container div.
+        }
+        </script>
+  </head>
+  <body onload="initViz();">
     
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
+    <div class="header">
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <div class="navbar-header">
+       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -53,7 +76,7 @@
       </ul>
      
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Link</a></li>
+        <li><a href="#">Glossary</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
           <ul class="dropdown-menu">
@@ -67,7 +90,19 @@
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
-</nav>
+  </nav>
+  <div class=
+  <h3>Business Intelligence Portal</h3>
+</div>
+
+<div id="vizContainer"></div>
+
+<div class="footer">
+  
+  <h5> Univeristy of San Francisco Business Intelligence Portal </h5>
+
+</div>
+
 </div>
 </body>
 </html>

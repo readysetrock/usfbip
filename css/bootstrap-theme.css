@@ -396,6 +396,7 @@ fieldset[disabled] .btn-danger.active {
   .navbar .navbar-nav .open .dropdown-menu > .active > a,
   .navbar .navbar-nav .open .dropdown-menu > .active > a:hover,
   .navbar .navbar-nav .open .dropdown-menu > .active > a:focus {
+    height: 200px;
     color: #fff;
     background-image: -webkit-linear-gradient(top, #337ab7 0%, #2e6da4 100%);
     background-image:      -o-linear-gradient(top, #337ab7 0%, #2e6da4 100%);

@@ -1,0 +1,31 @@
+{
+  "name": "usf",
+  "version": "0.0.1",
+  "description": "Business Intelligence Portal",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.13.4",
+    "grunt": "^0.4.5",
+    "mongoose": "^4.4.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "biptest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/readysetrock/usfbip.git"
+  },
+  "keywords": [
+    "usf",
+    "business",
+    "intelligence",
+    "portal"
+  ],
+  "author": "ty towry",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/readysetrock/usfbip/issues"
+  },
+  "homepage": "https://github.com/readysetrock/usfbip#readme"
+}

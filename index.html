@@ -2,45 +2,51 @@
 <html lang="en">
   <head>
 
+   <title>USF BIP</title>
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="University of San Francisco" content="ITS - Business Intelligence Portal">
     <meta name="Ty Towry tytowry@gmail.com" content="Dashboard | Tableau JavaScript API | Tableau Server |">
-	 
+    <!-- favicon -->
+    <link rel="icon" href="img/favicon.png">
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type = "text/css" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" type = "text/css" href="css/bootstrap.css">
+      <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/stylish-portfolio.css" >
+    <link rel="stylesheet" type = "text/css" href="css/bip.css">
+      <!-- Custom Fonts -->
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
-      <title>USF BIP</title>
-    
-	<!-- <script src="js/script.js"></script> -->
-    
-	<link rel="stylesheet" type = "text/css" href="css/bip.css">
-  <link rel="stylesheet" type = "text/css" href="css/bootstrap-theme.css">
-  <link rel="stylesheet" type = "text/css" href="css/bootstrap.css">      
-  <!-- Latest compiled and minified CSS -->
-  <script src="https://online.tableau.com/javascripts/api/tableau-version.js"></script>
-  <script type="text/javascript" 
-        src="https://public.tableau.com/javascripts/api/tableau-2.js"></script>
-  <script type="text/javascript">
-        
-        function initViz() {
-            var containerDiv = document.getElementById("vizContainer"),
-                url = "http://public.tableau.com/views/RegionalSampleWorkbook/Storms",
-                options = {
-                    hideTabs: true,
-                    onFirstInteractive: function () {
-                        console.log("Run this code when the viz has finished loading.");
-                    }
-                };
-            var viz = new tableau.Viz(containerDiv, url, options); 
-            // Create a viz object and embed it in the container div.
-        }
-  </script>
+    <!-- Latest compiled and minified CSS -->
+    <script src="https://online.tableau.com/javascripts/api/tableau-version.js"></script>
+    <script type="text/javascript" 
+          src="https://public.tableau.com/javascripts/api/tableau-2.js"></script>
+    <script type="text/javascript">
+          
+          function initViz() {
+              var containerDiv = document.getElementById("vizContainer"),
+                  url = "http://public.tableau.com/views/RegionalSampleWorkbook/Storms",
+                  options = {
+                      hideTabs: true,
+                      onFirstInteractive: function () {
+                          console.log("Run this code when the viz has finished loading.");
+                      }
+                  };
+              var viz = new tableau.Viz(containerDiv, url, options); 
+              // Create a viz object and embed it in the container div.
+          }
+    </script>
   
   </head>
 
 
-  <body onload="initViz();">
+  <body >
     
     <div class="header">
       <nav class="navbar navbar-default">
@@ -63,13 +69,9 @@
       
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">HOME<span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Recommended</a></li>
-        <li><a href="#">Popular</a></li>
-        <li><a href="#">Favorites</a></li>
+        <li><a href="#">Getting Started</a></li>
         <li><a href="#">Glossary</a></li>
       </ul>
-     
-      
       <form id="signin" class="navbar-form navbar-right" role="form">
         <div class="input-group">
           <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
@@ -82,9 +84,8 @@
         </div>
           <button type="submit" class="btn btn-primary">Login</button>
       </form>
-     
     </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
+
   </nav>
 
 
@@ -94,58 +95,102 @@
     
 
     <div class="row">
-  
       <div class="col-md-3 col-sm-4 col-xs-6">
         <div class="dummy"></div>
-        <a href="#x" class="thumbnail purple">Homepage</a>
+        <a href="#x" class="thumbnail purple">Dashboard</a>
+      </div>
+      <div class="col-md-3 col-sm-4 col-xs-6">
+        <div class="dummy" ></div>
+        <a href="#x" class="thumbnail purple"></a>
       </div>
       <div class="col-md-3 col-sm-4 col-xs-6">
         <div class="dummy"></div>
-        <a href="#x" class="thumbnail purple">View Profile</a>
-      </div>
-      <div class="col-md-3 col-sm-4 col-xs-6">
-        <div class="dummy"></div>
-        <a href="#x" class="thumbnail purple">Something<br>2 lines</a>
+        <a href="#x" class="thumbnail purple"><br></a>
      </div>
        <div class="col-md-3 col-sm-4 col-xs-6">
         <div class="dummy"></div>
-        <a href="#x" class="thumbnail purple">Something 2 lines</a>
+        <a href="#x" class="thumbnail purple"></a>
      </div>
        <div class="col-md-3 col-sm-4 col-xs-6">
         <div class="dummy"></div>
-        <a href="#x" class="thumbnail purple">Homepage</a>
+        <a href="#x" class="thumbnail purple">Recommended</a>
       </div>
       <div class="col-md-3 col-sm-4 col-xs-6">
         <div class="dummy"></div>
-        <a href="#x" class="thumbnail purple">View Profile</a>
+        <a href="#x" class="thumbnail purple"></a>
       </div>
       <div class="col-md-3 col-sm-4 col-xs-6">
         <div class="dummy"></div>
-        <a href="#x" class="thumbnail purple">Something 2 lines</a>
+        <a href="#x" class="thumbnail purple"></a>
      </div>
        <div class="col-md-3 col-sm-4 col-xs-6">
         <div class="dummy"></div>
-        <a href="#x" class="thumbnail purple">Something 2 lines</a>
+        <a href="#x" class="thumbnail purple"></a>
      </div>
       
     </div>
 
+    <div class="row">
+  
+      <div class="col-md-3 col-sm-4 col-xs-6">
+        <div class="dummy"></div>
+        <a href="#x" class="thumbnail purple">Most Viewed</a>
+      </div>
+      <div class="col-md-3 col-sm-4 col-xs-6">
+        <div class="dummy" ></div>
+        <a href="#x" class="thumbnail purple"></a>
+      </div>
+      <div class="col-md-3 col-sm-4 col-xs-6">
+        <div class="dummy"></div>
+        <a href="#x" class="thumbnail purple"><br></a>
+     </div>
+       <div class="col-md-3 col-sm-4 col-xs-6">
+        <div class="dummy"></div>
+        <a href="#x" class="thumbnail purple"></a>
+     </div>
 
-      <ul >
-          <div id="vizContainer"></div>
-      </ul>
 
-    
+<!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <div id="connect">
+                    <h4><strong>Business Intelligence Portal </br> Connections</strong>
+                    </h4>
+                    </div>
+                    <p></p>
+                    <ul class="list-unstyled">
+                        <li><i class="fa fa-phone fa-fw"></i> (415) 555-5555</li>
+                        <li><i class="fa fa-envelope-o fa-fw"></i>  <a href="">EMAIL
+                        </a>
+                        </li>
+                    </ul>
+                    <br>
+                    <ul class="list-inline">
+                        <li>
+                            <a href=""><i class="fa fa-facebook fa-fw fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa fa-twitter fa-fw fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa fa-instagram fa-fw fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa fa-google fa-fw fa-3x"></i></a>
+                        </li>
 
+                        
+                    </ul>
+                    <hr class="small">
+                    <p class="text-muted">Copyright 2016 &copy; University of San Francisco | Business Intelligence Portal</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-    <div class="footer">
-        <h5> Univeristy of San Francisco Business Intelligence Portal </h5>
-    </div>
-
-
-
-
-</div>
+  </div><!-- /.container-fluid -->
 
 
 <!-- jQuery -->
@@ -159,6 +204,37 @@
     $("#menu-toggle").click(function(e) {
         e.preventDefault();
         $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+        <script>
+    // Closes the sidebar menu
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Scrolls to the selected menu item on the page
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
     });
     </script>
 </body>

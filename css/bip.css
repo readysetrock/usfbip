@@ -20,29 +20,9 @@
 	border-top-color: red;
 }
 
-/* make sidebar nav vertical */ 
-@media (min-width: 768px) {
-  .sidebar-nav .navbar .navbar-collapse {
-    padding: 0;
-    max-height: none;
-  }
-  .sidebar-nav .navbar ul {
-    float: none;
-    display: block;
-  }
-  .sidebar-nav .navbar li {
-    float: none;
-    display: block;
-  }
-  .sidebar-nav .navbar li a {
-    padding-top: 12px;
-    padding-bottom: 12px;
-  }
-}
-
 img {
-    max-height: 65px;
-    width: 65px;
+    height: 40px;
+    width: 40px;
 }
 
 
@@ -59,10 +39,11 @@ img {
 }
 .thumbnail {
     position: absolute;
-    top: 15px;
+    top: 5px;
     bottom: 0;
-    left: 15px;
+    left: 10px;
     right: 0;
     text-align:center;
-    padding-top:calc(50% - 30px);
+    padding-top:calc(50% - 10px);
+    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
 }

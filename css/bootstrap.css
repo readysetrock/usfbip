@@ -10,7 +10,8 @@ html {
       -ms-text-size-adjust: 100%;
 }
 body {
-  margin: 0;
+  margin: 20 20 20 20;
+  border-radius: 5px;
 }
 article,
 aside,
@@ -1410,7 +1411,7 @@ a.bg-danger:focus {
 }
 .page-header {
   padding-bottom: 9px;
-  margin: 40px 0 20px;
+  margin: 10px 0 20px;
   border-bottom: 1px solid #eee;
 }
 ul,
@@ -3635,7 +3636,7 @@ tbody.collapse.in {
   bottom: 100%;
   margin-bottom: 2px;
 }
-@media (min-width: 768px) {
+@media (min-width: 568px) {
   .navbar-right .dropdown-menu {
     right: 0;
     left: auto;
@@ -3975,7 +3976,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   margin-left: -1px;
 }
 .nav {
-  padding-left: 0;
+  padding-left: 15px;
   margin-bottom: 0;
   list-style: none;
 }

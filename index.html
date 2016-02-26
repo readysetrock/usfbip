@@ -16,8 +16,9 @@
     <link rel="icon" type="image/png" sizes="16x16" href="img/usfsymboltrans.png">
     
       <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" >
-    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
+<!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
     <link rel="stylesheet" href="css/icomoon-social.css">
 
     <!-- Custom CSS -->
@@ -31,61 +32,69 @@
       <!-- Tableau API -->
     
     <script src="https://insightwdev.usfca.edu/javascripts/api/tableau-2.js"></script>
+    
     <script type="text/javascript">
           
           function initViz() {
           var containerDiv = document.getElementById("vizContainer"),
-          url = "https://insightwdev.usfca.edu/#/projects/84/workbooks";
+          url = "https://insightwdev.usfca.edu/#/projects/34/workbooks";
           var viz = new tableau.Viz(containerDiv, url); 
-}
+          }
     </script>
   
   </head>
 
-
   <body onload="initViz();">
-    
-    <div class="page-header">
-      <nav class="navbar navbar-default">
-        <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="true">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
 
-        </div>
+
+
+<nav class="navbar navbar-default">
+  
+  <div class="container-fluid">
+
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+
+    <div class="collapse navbar-collapse"  id="bs-example-navbar-collapse-1">     
+      <ul class="nav navbar-nav">        
+        <li><img src="img/usflogotrans.png"></li>      
+      </ul>
+    </div><!-- /.navbar-collapse -->
+    
 
     <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="navbar-brand"
-              <a href="#"><img src="img/usflogotrans.png" ></a>
-        </div>
-    
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">     
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#">HOME</a></li>
         <li><a href="#">REPORTS</a></li>
         <li><a href="#">GLOSSARY</a></li>
         <li><a href="#">LOGIN</a></li>
       </ul>
-
     </div><!-- /.navbar-collapse -->
 
-  </nav>
+  </div><!-- /.container-fluid -->
+</nav>
 
-</div>
+
+
+
+        <div id="vizContainer"></div>
     
-    <div id="vizContainer"></div>
+
+
 
     <div class="row">
       <div class="col-md-3 col-sm-4 col-xs-6">
         <div class="dummy" ><a href="#" ></a> </div>
-        <a href="#x" class="thumbnail purple">POPULAR</a>
+        <a href="#x" class="thumbnail purple" id="">TRENDING</a>
       </div>
       <div class="col-md-3 col-sm-4 col-xs-6">
         <div class="dummy" ></div>
@@ -122,7 +131,7 @@
   
       <div class="col-md-3 col-sm-4 col-xs-6">
         <div class="dummy"></div>
-        <a href="#x" class="thumbnail purple">Most Viewed</a>
+        <a href="#x" class="thumbnail purple">MOST VIEWED</a>
       </div>
       <div class="col-md-3 col-sm-4 col-xs-6">
         <div class="dummy" ></div>
@@ -144,34 +153,17 @@
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1 text-center">
                     <div id="connect">
-                    <img type="image/png" src="img/usfsymboltrans.png" alt="University of San Francisco"  >
+                    <img type="image/png" src="img/usfsymboltranssmall.png" alt="University of San Francisco"  >
                     </div>
                     <p></p>
                     <ul class="list-unstyled">
                         <li><i class="fa fa-phone fa-fw"></i> (415) 555-5555</li>
-                        <li><i class="fa fa-envelope-o fa-fw"></i>  <a href="">EMAIL
+                        <li><i class="fa fa-envelope-o fa-fw"></i><a href="">HELP
                         </a>
-                        </li>
+                        <li>Copyright 2016 &copy; University of San Francisco | Business Intelligence Portal</li>
                     </ul>
-                    <br>
-                    <ul class="list-inline">
-                        <li>
-                            <a href=""><i class="fa fa-facebook fa-fw fa-3x"></i></a>
-                        </li>
-                        <li>
-                            <a href=""><i class="fa fa-twitter fa-fw fa-3x"></i></a>
-                        </li>
-                        <li>
-                            <a href=""><i class="fa fa-instagram fa-fw fa-3x"></i></a>
-                        </li>
-                        <li>
-                            <a href=""><i class="fa fa-google fa-fw fa-3x"></i></a>
-                        </li>
-
-                        
-                    </ul>
-                    <hr class="small">
-                    <p class="text-muted">Copyright 2016 &copy; University of San Francisco | Business Intelligence Portal</p>
+                    
+                    <p class="text-muted"></p>
                 </div>
             </div>
         </div>
@@ -182,14 +174,11 @@
 
     <!-- jQuery -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="js/jquery.js"></script>
-
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/usfbip.js></script>
 
-    <!-- Menu Toggle Script -->
-
-    <script src="js/usfbip.js"></script>
+ 
     
 </body>
 </html>

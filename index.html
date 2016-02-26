@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+  
   <head>
 
-   <title>Business Intelligence Portal</title>
-
+   <title>BIP</title>
     
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -28,30 +28,22 @@
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" >
 
 
-      
-    <script src="https://online.tableau.com/javascripts/api/tableau-version.js"></script>
-    <script type="text/javascript" 
-          src="https://public.tableau.com/javascripts/api/tableau-2.js"></script>
+      <!-- Tableau API -->
+    
+    <script src="https://insightwdev.usfca.edu/javascripts/api/tableau-2.js"></script>
     <script type="text/javascript">
           
           function initViz() {
-              var containerDiv = document.getElementById("vizContainer"),
-                  url = "http://public.tableau.com/views/RegionalSampleWorkbook/Storms",
-                  options = {
-                      hideTabs: true,
-                      onFirstInteractive: function () {
-                          console.log("Run this code when the viz has finished loading.");
-                      }
-                  };
-              var viz = new tableau.Viz(containerDiv, url, options); 
-              // Create a viz object and embed it in the container div.
-          }
+          var containerDiv = document.getElementById("vizContainer"),
+          url = "https://insightwdev.usfca.edu/#/projects/84/workbooks";
+          var viz = new tableau.Viz(containerDiv, url); 
+}
     </script>
   
   </head>
 
 
-  <body >
+  <body onload="initViz();">
     
     <div class="page-header">
       <nav class="navbar navbar-default">
@@ -70,13 +62,13 @@
 
     <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="navbar-brand"
-              <a href="#"><img src="img/changetheworld.png" ></a>
+              <a href="#"><img src="img/usflogotrans.png" ></a>
         </div>
     
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       
-      <ul class="nav navbar-right">
-        <li class="active"><a href="#">HOME<span class="sr-only">(current)</span></a></li>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">HOME</a></li>
         <li><a href="#">REPORTS</a></li>
         <li><a href="#">GLOSSARY</a></li>
         <li><a href="#">LOGIN</a></li>
@@ -86,11 +78,9 @@
 
   </nav>
 
-
-
-
 </div>
     
+    <div id="vizContainer"></div>
 
     <div class="row">
       <div class="col-md-3 col-sm-4 col-xs-6">
@@ -154,9 +144,7 @@
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1 text-center">
                     <div id="connect">
-                    <img type="image/png" sizes ="50x50" src="img/usfsymboltrans.png" alt="University of San Francisco"  >
-                    <h4><strong>Business Intelligence Portal </br> Connections</strong>
-                    </h4>
+                    <img type="image/png" src="img/usfsymboltrans.png" alt="University of San Francisco"  >
                     </div>
                     <p></p>
                     <ul class="list-unstyled">

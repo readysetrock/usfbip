@@ -13,6 +13,8 @@ function handleRequest(request, response){
 }
 
 //Create a server
-var server = http.createServer(handleRequest);
+var server = http.createServer(handleRequest); {
+	console.log("Welcome to your website on port 8080");
+};
 
 

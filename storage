@@ -1,0 +1,54 @@
+ <div class="row">
+      <div class="col-md-3 col-sm-4 col-xs-6">
+        <div class="dummy" ><a href="#" ></a> </div>
+        <a href="#x" class="thumbnail purple" id="">TRENDING</a>
+      </div>
+      <div class="col-md-3 col-sm-4 col-xs-6">
+        <div class="dummy" ></div>
+        <a href="#x" class="thumbnail purple"></a>
+      </div>
+      <div class="col-md-3 col-sm-4 col-xs-6">
+        <div class="dummy"></div>
+        <a href="#x" class="thumbnail purple"><br></a>
+     </div>
+       <div class="col-md-3 col-sm-4 col-xs-6">
+        <div class="dummy"></div>
+        <a href="#x" class="thumbnail purple"></a>
+     </div>
+       <div class="col-md-3 col-sm-4 col-xs-6">
+        <div class="dummy"></div>
+        <a href="#x" class="thumbnail purple">FAVORITES</a>
+      </div>
+      <div class="col-md-3 col-sm-4 col-xs-6">
+        <div class="dummy"></div>
+        <a href="#x" class="thumbnail purple"></a>
+      </div>
+      <div class="col-md-3 col-sm-4 col-xs-6">
+        <div class="dummy"></div>
+        <a href="#x" class="thumbnail purple"></a>
+     </div>
+       <div class="col-md-3 col-sm-4 col-xs-6">
+        <div class="dummy"></div>
+        <a href="#x" class="thumbnail purple"></a>
+     </div>
+      
+    </div>
+
+    <div class="row">
+  
+      <div class="col-md-3 col-sm-4 col-xs-6">
+        <div class="dummy"></div>
+        <a href="#x" class="thumbnail purple">MOST VIEWED</a>
+      </div>
+      <div class="col-md-3 col-sm-4 col-xs-6">
+        <div class="dummy" ></div>
+        <a href="#x" class="thumbnail purple"></a>
+      </div>
+      <div class="col-md-3 col-sm-4 col-xs-6">
+        <div class="dummy"></div>
+        <a href="#x" class="thumbnail purple"><br></a>
+     </div>
+       <div class="col-md-3 col-sm-4 col-xs-6">
+        <div class="dummy"></div>
+        <a href="#x" class="thumbnail purple"></a>
+     </div>

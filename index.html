@@ -1,53 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-  
   <head>
-
-   <title>BIP</title>
-    
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-      
+
     <meta name="University of San Francisco" content="ITS - Business Intelligence Portal, JavaScript, HTML, CSS, jquery, bootstrap">
-    <meta name="Ty Towry tytowry@gmail.com" content="Dashboard | Tableau JavaScript API | Tableau Server ">
+
+    <title>BIP1</title>
     
       <!-- favicon -->
     <link rel="icon" type="image/png" sizes="16x16" href="img/usfsymboltrans.png">
     
       <!-- Bootstrap Core CSS -->
-<!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="css/icomoon-social.css">
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/stylish-portfolio.css" >
+      <!-- Latest compiled and minified CSS -->
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    
     <link rel="stylesheet" type="text/css" href="css/bip.css">
       <!-- Custom Fonts -->
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" >
-
 
       <!-- Tableau API -->
-    
-    <script src="https://insightwdev.usfca.edu/javascripts/api/tableau-2.js"></script>
-    
+
+    <script type="text/javascript" 
+      src="https://insightwdev.usfca.edu/javascripts/api/tableau-2.js"></script>
     <script type="text/javascript">
-          
-          function initViz() {
-          var containerDiv = document.getElementById("vizContainer"),
-          url = "https://insightwdev.usfca.edu/#/projects/34/workbooks";
-          var viz = new tableau.Viz(containerDiv, url); 
-          }
+        function initViz() {
+            var containerDiv = document.getElementById("vizContainer"),
+                url = "https://insightwdev.usfca.edu/#/projects/84/workbooks",
+                options = {
+                    hideTabs: true,
+                    onFirstInteractive: function () {
+                        console.log("Run this code when the viz has finished loading.");
+                    }
+                };
+            
+            var viz = new tableau.Viz(containerDiv, url, options); 
+            // Create a viz object and embed it in the container div.
+        }
     </script>
-  
+
   </head>
 
-  <body onload="initViz();">
+<body onload="initViz();">
 
-
-
+  
 <nav class="navbar navbar-default">
   
   <div class="container-fluid">
@@ -62,10 +62,7 @@
       </button>
     </div>
 
-
-
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
+<!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> 
      <ul class="nav navbar-nav">        
         <li><a href="#" class="pull-left"><img src="img/usflogotrans.png"></a></li>      
@@ -80,69 +77,9 @@
 
   </div><!-- /.container-fluid -->
 </nav>
-
-  
-
-
-        <div id="vizContainer"></div>
-    
-
-
-
-    <div class="row">
-      <div class="col-md-3 col-sm-4 col-xs-6">
-        <div class="dummy" ><a href="#" ></a> </div>
-        <a href="#x" class="thumbnail purple" id="">TRENDING</a>
-      </div>
-      <div class="col-md-3 col-sm-4 col-xs-6">
-        <div class="dummy" ></div>
-        <a href="#x" class="thumbnail purple"></a>
-      </div>
-      <div class="col-md-3 col-sm-4 col-xs-6">
-        <div class="dummy"></div>
-        <a href="#x" class="thumbnail purple"><br></a>
-     </div>
-       <div class="col-md-3 col-sm-4 col-xs-6">
-        <div class="dummy"></div>
-        <a href="#x" class="thumbnail purple"></a>
-     </div>
-       <div class="col-md-3 col-sm-4 col-xs-6">
-        <div class="dummy"></div>
-        <a href="#x" class="thumbnail purple">FAVORITES</a>
-      </div>
-      <div class="col-md-3 col-sm-4 col-xs-6">
-        <div class="dummy"></div>
-        <a href="#x" class="thumbnail purple"></a>
-      </div>
-      <div class="col-md-3 col-sm-4 col-xs-6">
-        <div class="dummy"></div>
-        <a href="#x" class="thumbnail purple"></a>
-     </div>
-       <div class="col-md-3 col-sm-4 col-xs-6">
-        <div class="dummy"></div>
-        <a href="#x" class="thumbnail purple"></a>
-     </div>
       
-    </div>
 
-    <div class="row">
-  
-      <div class="col-md-3 col-sm-4 col-xs-6">
-        <div class="dummy"></div>
-        <a href="#x" class="thumbnail purple">MOST VIEWED</a>
-      </div>
-      <div class="col-md-3 col-sm-4 col-xs-6">
-        <div class="dummy" ></div>
-        <a href="#x" class="thumbnail purple"></a>
-      </div>
-      <div class="col-md-3 col-sm-4 col-xs-6">
-        <div class="dummy"></div>
-        <a href="#x" class="thumbnail purple"><br></a>
-     </div>
-       <div class="col-md-3 col-sm-4 col-xs-6">
-        <div class="dummy"></div>
-        <a href="#x" class="thumbnail purple"></a>
-     </div>
+    <div id="vizContainer" ></div>
 
 
 <!-- Footer -->
@@ -160,8 +97,6 @@
                         </a>
                         <li>University of San Francisco | Business Intelligence Portal</li>
                     </ul>
-                    
-                    <p class="text-muted"></p>
                 </div>
             </div>
         </div>
@@ -170,13 +105,16 @@
   </div><!-- /.container-fluid -->
 
 
+
+
     <!-- jQuery -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/usfbip.js></script>
+
+    <script src="/usfbip.js"></script>
 
  
     
-</body>
+</body >
 </html>

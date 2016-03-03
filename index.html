@@ -27,12 +27,13 @@
 
       <!-- Tableau API -->
 
+      <script type='text/javascript' src='https://dataviz.usfca.edu/javascripts/api/tableau-2.js'></script>
       <script type='text/javascript' src='https://dataviz.usfca.edu/javascripts/api/viz_v1.js'></script>
 
       <script>
         function initViz() {
             var containerDiv = document.getElementById("vizContainer"),
-                url = "https://dataviz.usfca.edu/#/views/FY16AlumniDonorProjection/Alumnidonorcount",
+                url = "https://dataviz.usfca.edu/#/views/FY16AlumniDonorProjection/Alumnidonorcount?:iid=1",
                 options = {
                     hideTabs: true,
                     onFirstInteractive: function () {
@@ -77,8 +78,23 @@
 
   </div><!-- /.container-fluid -->
 </nav>
-      
-        
+    <div class="row">
+      <div class="col-md-3 col-sm-4 col-xs-6">
+        <iframe src="https://dataviz.usfca.edu/views/FY16AlumniDonorProjection/Alumnidonorcount?:embed=y&:showShareOptions=true&:display_count=no&:showVizHome=no"></iframe> 
+      </div>
+      <div class="col-md-3 col-sm-4 col-xs-6">
+        <iframe src="https://dataviz.usfca.edu/views/ProposalsbyOfficer/ProposalsbyOfficer?:embed=y&:showShareOptions=true&:display_count=no&:showVizHome=no"></iframe> 
+      </div>
+      <div class="col-md-3 col-sm-4 col-xs-6">
+        <iframe src="https://dataviz.usfca.edu/views/chadd1/Dashboard1?:embed=y&:showShareOptions=true&:display_count=no&:showVizHome=no"></iframe> 
+      </div>
+       <div class="col-md-3 col-sm-4 col-xs-6">
+        <iframe src="https://dataviz.usfca.edu/views/Book2/Salesbyregion?:embed=y&:showShareOptions=true&:display_count=no&:showVizHome=no"></iframe> 
+      </div>
+    </div>
+
+
+            
 
     <div id="vizContainer" ></div>
 
@@ -89,9 +105,8 @@
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1 text-center">
                     <div id="connect">
-                    <img src="img/usfSymbolTransSmall.png" alt="USF"  >
+                    <img src="img/usfSymbolTransSmall.png" alt="USF"  />
                     </div>
-                    <p></p>
                     <ul class="list-unstyled">
                         <li><i class="fa fa-phone fa-fw"></i> (415) 555-5555</li>
                         <li><i class="fa fa-envelope-o fa-fw"></i><a href="">HELP

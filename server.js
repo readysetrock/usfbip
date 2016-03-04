@@ -1,4 +1,5 @@
 var dispatcher = require('httpdispatcher');
+var simpleBlog = require('simple-blog').start();
 var http = require('http');
 var connect = require('connect');
 var serveStatic = require('serve-static');

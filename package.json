@@ -10,7 +10,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "biptest"
+    "test": "biptest",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",

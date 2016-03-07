@@ -20,10 +20,8 @@
       <!-- Custom Fonts -->
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 
-      <!-- Tableau Public API -->
-      <script type="text/javascript" 
-      src="https://public.tableau.com/javascripts/api/tableau-2.js"></script>
-
+      
+      
       <!-- Tableau API Production -->
       <script type='text/javascript' src='https://dataviz.usfca.edu/javascripts/api/viz_v1.js'></script>
 
@@ -32,11 +30,13 @@
       <!-- Tableau API Development -->
       <script type='text/javascript' src='https://insightwdev.usfca.edu/javascripts/api/tableau-2.js'></script>
       
-
-      <script>
+      <!-- Tableau Public API -->
+      <script type="text/javascript" 
+      src="https://public.tableau.com/javascripts/api/tableau-2.js"></script>
+      <script type="text/javascript">
         function initViz() {
             var containerDiv = document.getElementById("vizContainer"),
-                url = "https://insightwdev.usfca.edu/#/projects",
+                url = "http://public.tableau.com/views/RegionalSampleWorkbook/Storms",
                 options = {
                     hideTabs: true,
                     onFirstInteractive: function () {
@@ -50,7 +50,7 @@
     </script>
   </head>
 
-<body onload="initViz();">
+<body >
 
   
 <nav class="navbar navbar-default">
@@ -87,7 +87,7 @@
 
      <div class="row ">
         <div class="col-md-3 col-sm-4 col-xs-8">
-        <a href="https://dataviz.usfca.edu/#/workbooks?favorite=true"> <img src="img/colortiles/favoritered.png" ></a>
+        <a href="https://dataviz.usfca.edu/#/workbooks?favorite=true"> <img src="img/colortiles/FavoriteRed.png" ></a>
         </div>
         <div class="col-md-3 col-sm-4 col-xs-8">
           <iframe src="https://dataviz.usfca.edu/#/views?:embed=y&:showShareOptions=true&:display_count=no&:showVizHome=no" width="200" height="150"></iframe> 
@@ -104,7 +104,7 @@
       
        <div class="row ">
         <div class="col-md-3 col-sm-4 col-xs-8">
-          <a href="https://dataviz.usfca.edu/#/projects?"> <img src="img/colortiles/bluepopular.png" ></a>
+          <a href="https://dataviz.usfca.edu/#/projects?"> <img src="img/colortiles/BluePopular.png" ></a>
         </div>
       <div class="col-md-3 col-sm-4 col-xs-8">
         <iframe src="https://dataviz.usfca.edu/views/FY16AlumniDonorProjection/Alumnidonorcount?:embed=y&:showShareOptions=true&:display_count=no&:showVizHome=no" width="200" height="150"></iframe> 
@@ -121,7 +121,7 @@
       
        <div class="row ">
         <div class="col-md-3 col-sm-4 col-xs-8">
-          <a href="https://dataviz.usfca.edu/#/views?"> <img src="img/colortiles/recentlyadded.png" ></a>
+          <a href="https://dataviz.usfca.edu/#/views?"> <img src="img/colortiles/RecentlyAdded.png" ></a>
         </div>
       <div class="col-md-3 col-sm-4 col-xs-8">
         <iframe src="https://dataviz.usfca.edu/views/FY16AlumniDonorProjection/Alumnidonorcount?:embed=y&:showShareOptions=true&:display_count=no&:showVizHome=no" width="200" height="150"></iframe> 
@@ -138,7 +138,7 @@
 
       <div class="row ">
         <div class="col-md-3 col-sm-4 col-xs-8">
-          <a href="https://dataviz.usfca.edu/#/views?"> <img src="img/colortiles/recommendedyellow.png" ></a>
+          <a href="https://dataviz.usfca.edu/#/views?"> <img src="img/colortiles/RecommendedYellow.png" ></a>
         </div>
       <div class="col-md-3 col-sm-4 col-xs-8">
         <iframe src="https://dataviz.usfca.edu/views/FY16AlumniDonorProjection/Alumnidonorcount?:embed=y&:showShareOptions=true&:display_count=no&:showVizHome=no" width="200" height="150"></iframe> 
@@ -158,7 +158,7 @@
 
 
 
-    <div id="vizContainer" ></div>
+    <div onload="initViz();" id="vizContainer" ></div>
     
 
 

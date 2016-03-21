@@ -150,3 +150,10 @@ https://dataviz.usfca.edu/views/InternationalStudentsatUSF/MapDashboard?:embed=y
             </div>
         </div>
     </footer>
+
+
+
+                  <h3 class="name">Mercury</h3>
+              <p class="symbol">Hg</p>
+              <p class="number">80</p>
+              <p class="weight">200.59</p>

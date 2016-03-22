@@ -46,6 +46,11 @@ div ul li a img {
     border: 1px solid transparent;
 }
 
+.btn-toolbar {
+
+    margin-top: 110px;
+}
+
 .text-vertical-center {
     display: table-cell;
     text-align: center;

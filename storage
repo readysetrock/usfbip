@@ -12,6 +12,34 @@ Todo List
     </div>
 
 
+
+            <div id="filters" class="button-group text-center">  
+              <button class="button is-checked" data-filter="*">All Reports</button>
+              <button class="button" data-filter=".metal">Favorites</button>
+              <button class="button" data-filter=".transition">Recommened</button>
+              <button class="button" data-filter=".alkali, .alkaline-earth">Top 5</button>
+              <button class="button" data-filter=":not(.transition)">New</button>
+              <button class="button" data-filter=".metal:not(.transition)">Recent</button>
+              <button class="button" data-filter="numberGreaterThan50">Trending</button>
+              <button class="button" data-filter="ium">International</button>
+            </div>
+              </br>
+              <!-- sort buttons -->
+            <div id="sorts" class="button-group text-center">  
+              <button class="button is-checked" data-sort-by="original-order">original order</button>
+              <button class="button" data-sort-by="name">name</button>
+              <button class="button" data-sort-by="symbol">date</button>
+              <button class="button" data-sort-by="number">location</button>
+              <button class="button" data-sort-by="weight">recent</button>
+              <button class="button" data-sort-by="category">category</button>
+            </div>
+
+
+
+
+
+
+
 https://dataviz.usfca.edu/#/projects
  <script type="text/javascript" 
       src="https://dataviz.usfca.edu/javascripts/api/tableau-2.js"></script>
